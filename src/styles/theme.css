@@ -1,0 +1,56 @@
+
+@theme {
+  /* Brand colors */
+  --color-primary: #FF8C0A;
+  --color-primary-dark: #E67600;
+  --color-primary-light: #FFF2E3;
+
+  --color-secondary: #480C84;
+  --color-secondary-dark: #32065F;
+  --color-secondary-light: #F3EAFB;
+
+  /* Background colors */
+  --color-background: #FFFFFF;
+  --color-surface: #F8F7FA;
+  --color-surface-dark: #F0EDF4;
+
+  /* Text colors */
+  --color-heading: #21182D;
+  --color-body: #514A5B;
+  --color-muted: #827A8B;
+
+  /* Borders */
+  --color-border: #E8E3ED;
+
+  /* Feedback colors */
+  --color-success: #16865B;
+  --color-warning: #D99019;
+  --color-danger: #D94747;
+
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+
+  /* Border radius */
+  --radius-card: 1rem;
+  --radius-button: 0.625rem;
+
+  /* Shadows */
+  --shadow-card: 0 8px 30px rgba(33, 24, 45, 0.06);
+  --shadow-card-hover: 0 16px 40px rgba(33, 24, 45, 0.12);
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-body);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+}

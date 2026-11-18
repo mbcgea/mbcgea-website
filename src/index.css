@@ -1,0 +1,88 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@import "tailwindcss";
+@import "./styles/theme.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[marquee_35s_linear_infinite\] {
+    animation: none !important;
+  }
+}
+
+
+
+
+
+
+/* MBCGEA Member Logo Carousel */
+
+@keyframes mbcgea-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.mbcgea-logo-track {
+  animation: mbcgea-marquee 35s linear infinite;
+}
+
+.mbcgea-logo-track:hover {
+  animation-play-state: paused;
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .mbcgea-logo-track {
+    animation: none;
+  }
+}
